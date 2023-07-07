@@ -1,0 +1,27 @@
+<div class="row">
+    <h1> Lista de Serviços </h1>
+    {{dataServices}}
+
+<table class="table">
+    <thead>
+        <tr>
+            <td> Name </td>
+            <td> Price </td>
+        </tr>
+    </thead>
+    <tbody>
+       
+        {{#each dataServices}} 
+         <tr>
+            <td> {{ this.name }} </td>
+            <td> {{ this.price }} </td>
+            </tr>
+     {{/each }}
+        
+    </tbody>
+</table>
+  
+
+        <h1> {{ this.name  }}</h1>
+  
+</div>
